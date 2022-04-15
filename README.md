@@ -1,9 +1,7 @@
 Active Record Arel DepthFirst Visitor
 =====================================
 
-This gem re-introduces Arel code that was removeed from Rails 6.1: https://github.com/rails/rails/pull/36492
-
-The code existed in Arel from 4.0.0 to 9.0.0, and Ruby on Rails 4.0.* to 6.0.*. 
+This gem re-introduces Arel code that was removed from Rails 6.1: https://github.com/rails/rails/pull/36492 . The code existed in the arel gem from 4.0.0 to 9.0.0, and the rails gem from 4.0.0 to 6.0.0. 
 
 It provides a DepthFirst visitor for Arel that allows you to traverse the Arel AST, 
 e.g. for visualizations.
@@ -39,7 +37,3 @@ end
 ## License
 
 activerecord-arel_depth_first is released under the [MIT License](MIT-LICENSE).
-
-
-
-
