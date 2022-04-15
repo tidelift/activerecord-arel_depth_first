@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w( README.md )
   s.rdoc_options.concat ['--main',  'README.md']
 
-  s.add_dependency('activerecord', '>= 4.0.0')
+  s.add_dependency('activerecord', '>= 6.1.0')
   s.add_dependency('rake')
 end
