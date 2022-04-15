@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# Requiring the activerecord gem helper so we don't squash any 
-# future changes in there by writing our own helper.
 require_relative "../helper"
 
 module Arel
