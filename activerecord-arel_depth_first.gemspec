@@ -9,7 +9,8 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.2.2'
   s.license     = 'MIT'
-
+  s.metadata    = { "rubygems_mfa_required" => "true" }
+  
   s.author      = 'Tieg Zaharia'
   s.email       = 'tieg.zaharia@gmail.com'
   s.homepage    = 'https://github.com/tidelift/activerecord-arel_depth_first'
