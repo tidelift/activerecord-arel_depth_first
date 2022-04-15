@@ -73,8 +73,15 @@ module Arel # :nodoc: all
         alias :visit_Arel_Nodes_And :nary
 
         def binary(o)
-          visit o.left
-          visit o.right
+          # left/right were renamed to relation/wheres from DeleteStatement in rails 7.0.0: 
+          # https://github.com/rails/rails/commit/0f917da01a49f45c696bc0e32d14e4da811d8e6d
+          if o.is_a?(Arel::Nodes::DeleteStatement)
+            visit o.relation
+            visit o.wheres
+          else
+            visit o.left
+            visit o.right
+          end
         end
         alias :visit_Arel_Nodes_As                 :binary
         alias :visit_Arel_Nodes_Assignment         :binary
