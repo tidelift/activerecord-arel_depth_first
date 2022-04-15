@@ -1,5 +1,6 @@
 #!/usr/bin/env rake
 
+require "bundler/setup"
 require "rake/testtask"
 
 Rake::TestTask.new do |t|
