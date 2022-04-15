@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'activerecord-arel_depth_first'
-  s.version     = '1.0.0'
+  s.version     = '1.0.1'
   s.summary     = 'A DepthFirst visitor for Arel (removed from Rails in 6.1).'
 
   s.required_ruby_version = '>= 2.2.2'
